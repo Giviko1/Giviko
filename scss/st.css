@@ -1,0 +1,31 @@
+.sec {
+  display: flex;
+  height: 900px;
+  border: solid 2px red;
+}
+.sec .box-9 {
+  background: url("../img/pica_1.jpg");
+  background-color: #ff8400;
+  height: 300px;
+  border: solid 2px red;
+}
+.sec .box-10 {
+  background: url("../img/pica_2.jpg");
+  background-color: #ff8400;
+  height: 300px;
+  border: solid 2px red;
+}
+.sec .box-11 {
+  background: url("../img/pica_3.jpg");
+  background-color: #ff8400;
+  height: 300px;
+  width: 100%;
+  border: solid 2px red;
+}
+.sec .box-12 {
+  background: url("../img/pica_4.jpg");
+  background-color: #ff8400;
+  height: 300px;
+  width: 100%;
+  border: solid 2px red;
+}

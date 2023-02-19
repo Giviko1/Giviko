@@ -1,0 +1,999 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import './media/media.css';
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, body {
+  display: block;
+}
+
+section {
+  display: inline-block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div, ul, li, a {
+  display: inline-block;
+}
+
+* {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 41px;
+  background-color: aqua;
+}
+
+.conteiner-nav {
+  position: relative;
+  display: block;
+}
+.conteiner-nav .logo {
+  text-decoration: none;
+  padding: 45px 0px 0px 5%;
+  color: #f1f0f0;
+  font-size: 22px;
+  width: 76%;
+  font-family: "h6";
+}
+.conteiner-nav .menu-navigation {
+  padding: 45px 50px 0px 0px;
+  right: 0;
+  position: absolute;
+}
+.conteiner-nav .menu-navigation .menu-a {
+  padding-left: 30px;
+  text-align: center;
+  color: #f1f0f0;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+.conteiner-nav .menu-navigation .dropdown {
+  padding-left: 32px;
+  justify-content: center;
+  margin-right: 0px;
+  position: relative;
+  display: inline-block;
+}
+.conteiner-nav .menu-navigation .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin: 0px 0px;
+  padding-left: 3px;
+}
+.conteiner-nav .menu-navigation .dropdown-content a {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 35px;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  color: #f1f0ee;
+}
+.conteiner-nav .menu-navigation .dropdown-content a:hover {
+  background-color: #ed7c03;
+}
+.conteiner-nav .menu-navigation .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.heder-nav {
+  display: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.heder-nav .logo {
+  display: flex;
+  text-decoration: none;
+  padding: 45px 0px 0px 5%;
+  color: #fff;
+  font-size: 22px;
+  width: 76%;
+  font-family: "h6";
+}
+.heder-nav span {
+  margin: 35px 0px 0px 0px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: none;
+  justify-content: end;
+}
+.heder-nav .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(102, 29, 29, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.heder-nav .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.heder-nav .overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f1efef;
+  display: block;
+  transition: 0.3s;
+}
+.heder-nav .overlay a:hover, .heder-nav .overlay a:focus {
+  color: #f1f1f1;
+}
+.heder-nav .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .heder-nav .overlay {
+    overflow-y: auto;
+  }
+  .heder-nav .overlay a {
+    font-size: 20px;
+  }
+  .heder-nav .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.piza-back {
+  background-color: rgb(118, 119, 119);
+  background-blend-mode: multiply;
+  height: 900px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/pza.webp");
+}
+.piza-back h1 {
+  font-weight: 400;
+  margin-top: 150px;
+  font-family: "text2";
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
+}
+.piza-back .menu-piza {
+  margin: 30px;
+  display: flex;
+}
+.piza-back .menu-piza li {
+  padding-right: 10px;
+  list-style: none;
+  position: relative;
+}
+.piza-back li {
+  list-style: none;
+  position: relative;
+}
+.piza-back .menu-piza a {
+  color: rgb(12, 206, 54);
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  height: 100%;
+  line-height: 60px;
+  transition: all 0.2s;
+}
+.piza-back .menu-piza a:hover {
+  background: rgb(28, 204, 66);
+}
+.piza-back .menu-piza ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+.piza-back .menu-piza li:hover ul {
+  display: inline-block;
+  width: 100%;
+  border: solid rgb(0, 247, 255) 0px;
+}
+
+h2 {
+  margin: 0px 0px;
+  font-weight: 500;
+  font-family: "H6";
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+
+h3 {
+  font-family: "H6";
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+h4 {
+  margin-top: 25px;
+  font-family: "H6";
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.conteiner-buton {
+  margin: 90px;
+  display: flex;
+  justify-content: center;
+}
+.conteiner-buton .gilaki {
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ed7c03;
+  text-decoration: none;
+  padding: 15px 0px 0px 5px;
+  height: 50px;
+  width: 200px;
+  color: rgb(247, 242, 242);
+  font-weight: 700;
+  font-family: "h6";
+}
+
+.row {
+  margin: 0px 0px 150px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.bu-box {
+  filter: none;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.bu-box:hover {
+  filter: none;
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.bu-box {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  color: #bdbdbd;
+  background-blend-mode: multiply;
+}
+
+.bu-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.4rem;
+  left: 0;
+  bottom: 0;
+}
+
+.bu-box::after {
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+
+.bu-box:hover::after {
+  transform: scale(1, 1);
+  background: #ffc400;
+}
+
+.texti {
+  position: relative;
+  width: 300px;
+  height: 150px;
+}
+.texti .bu {
+  top: 23px;
+  left: 0;
+  position: absolute;
+  left: 5%;
+}
+.texti h2 {
+  color: #bdbdbd;
+  top: 60%;
+  left: 30%;
+  font-size: 14px;
+  position: absolute;
+}
+.texti h6 {
+  top: 23px;
+  font-weight: 300px;
+  font-size: 18px;
+  position: absolute;
+  left: 30%;
+  color: #343434;
+}
+.texti .star-icon {
+  top: 40%;
+  left: 32%;
+  position: absolute;
+  width: 60px;
+  height: 15px;
+}
+.texti .star-icon-for {
+  top: 40%;
+  left: 32%;
+  position: absolute;
+  width: 80px;
+  height: 15px;
+}
+
+.conteiner {
+  margin: 0px 0px 300px 0px;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.conteiner .conteiner-big {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.conteiner .conteiner-big .conteiner-img {
+  width: 300px;
+  height: 460px;
+  background: url("../img/piza-2.webp");
+}
+.conteiner .conteiner-big .conteiner-img-2 {
+  width: 300px;
+  height: 460px;
+  background: url("../img/piza-3.webp");
+}
+.conteiner .conteiner-big .pasdakleba {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 132, 0, 0.8);
+  height: 145px;
+  width: 100%;
+}
+.conteiner .conteiner-big h1 {
+  font-family: "robo";
+  padding: 20px;
+  position: absolute;
+  font-weight: 300px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.conteiner .conteiner-big h2 {
+  font-weight: 400;
+  padding: 50px;
+  position: absolute;
+  font-weight: 300px;
+  color: #ffffff;
+  font-size: 30px;
+}
+.conteiner .conteiner-big .pasdakleba-2 {
+  background-color: rgba(52, 52, 52, 0.8);
+  height: 145px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.conteiner .conteiner-big .pasdakleba-2 h1 {
+  padding: 20px;
+  position: absolute;
+  font-weight: 300px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.conteiner .conteiner-big .pasdakleba-2 h2 {
+  font-weight: 400;
+  padding: 50px;
+  position: absolute;
+  font-weight: 300px;
+  color: #ffffff;
+  font-size: 30px;
+}
+.conteiner .conteiner-big .text {
+  position: relative;
+  width: 470px;
+  height: 460px;
+}
+.conteiner .conteiner-big .text h1 {
+  margin: 0px 45px;
+  position: absolute;
+  top: 0px;
+  font-size: 29px;
+  color: #343434;
+}
+.conteiner .conteiner-big .text .About {
+  bottom: 0;
+  position: absolute;
+}
+.conteiner .conteiner-big .text p {
+  font-family: "robo";
+  color: #343434;
+  line-height: 1.55555555;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 90px 60px;
+}
+.conteiner .conteiner-big .text a {
+  text-decoration: underline;
+  font-size: 18px;
+  margin: 2px 60px;
+  text-transform: capitalize;
+  color: #ff8400;
+  font-weight: 700;
+  font-family: "robo";
+}
+.conteiner .conteiner-big .text a:hover {
+  cursor: pointer;
+  color: #343434;
+  transition: 0.3s;
+}
+
+.menu-img {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-image: url("../img/portolaxli.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.menu-futer {
+  bottom: 0;
+  right: 0;
+  background-color: #ff8400;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 135px;
+}
+.menu-futer a {
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "DRINK";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 55px;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.menu-img-2 {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-image: url("../img/pica_3.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.menu-futer-2 {
+  bottom: 0;
+  right: 0;
+  background-color: #ff8400;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 135px;
+}
+.menu-futer-2 a {
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "DRINK";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 55px;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.menu-img-3 {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-image: url("../img/pica_2.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.menu-futer-3 {
+  bottom: 0;
+  right: 0;
+  background-color: #ff8400;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 135px;
+}
+.menu-futer-3 a {
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "DRINK";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 55px;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.chef-h1 {
+  padding: 100px 0px 60px 0px;
+  text-align: center;
+  color: #ff8801;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.con-test-1 {
+  background: url("../img/pica_1.jpg");
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.con-test-1 .chef {
+  position: relative;
+  margin: 15px 20px;
+  border: solid 2px #ff8400;
+  background-color: #ff8400;
+  width: 150px;
+  height: 40px;
+}
+.con-test-1 a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+.con-test-1 .pasi {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+}
+.con-test-1 .pasi h2 {
+  position: absolute;
+  padding: 20px 50px;
+  margin: 0 0 0 0;
+  font-size: 15px;
+  color: #343434;
+}
+.con-test-1 .pasi h3 {
+  padding: 50px 50px;
+  position: absolute;
+  margin: 0 0 0 0;
+  font-size: 13px;
+  color: #bdbdbd;
+}
+.con-test-1 .pasi h4 {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  color: rgb(255, 146, 3);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.con-test-2 {
+  background: url("../img/pica_2.jpg");
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.con-test-2 .chef {
+  position: relative;
+  margin: 15px 20px;
+  border: solid 2px #ff8400;
+  background-color: #ff8400;
+  width: 150px;
+  height: 40px;
+}
+.con-test-2 a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+.con-test-2 .pasi {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+}
+.con-test-2 .pasi h2 {
+  position: absolute;
+  padding: 20px 50px;
+  margin: 0 0 0 0;
+  font-size: 15px;
+  color: #343434;
+}
+.con-test-2 .pasi h3 {
+  padding: 50px 50px;
+  position: absolute;
+  margin: 0 0 0 0;
+  font-size: 13px;
+  color: #bdbdbd;
+}
+.con-test-2 .pasi h4 {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  color: rgb(255, 146, 3);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.con-test-3 {
+  background: url("../img/pica_3.jpg");
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.con-test-3 .chef {
+  position: relative;
+  margin: 15px 20px;
+  border: solid 2px #ff8400;
+  background-color: #ff8400;
+  width: 150px;
+  height: 40px;
+}
+.con-test-3 a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+.con-test-3 .pasi {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+}
+.con-test-3 .pasi h2 {
+  position: absolute;
+  padding: 20px 50px;
+  margin: 0 0 0 0;
+  font-size: 15px;
+  color: #343434;
+}
+.con-test-3 .pasi h3 {
+  padding: 50px 50px;
+  position: absolute;
+  margin: 0 0 0 0;
+  font-size: 13px;
+  color: #bdbdbd;
+}
+.con-test-3 .pasi h4 {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  color: rgb(255, 146, 3);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.con-test-4 {
+  background: url("../img/pica_4.jpg");
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.con-test-4 .chef {
+  position: relative;
+  margin: 15px 20px;
+  background-color: #ff8400;
+  width: 150px;
+  height: 40px;
+}
+.con-test-4 a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+.pasi {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+}
+.pasi h2 {
+  position: absolute;
+  padding: 20px 50px;
+  margin: 0 0 0 0;
+  font-size: 15px;
+  color: #343434;
+}
+.pasi h3 {
+  padding: 50px 50px;
+  position: absolute;
+  margin: 0 0 0 0;
+  font-size: 13px;
+  color: #bdbdbd;
+}
+.pasi h4 {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  color: rgb(255, 146, 3);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.futer-up {
+  display: block;
+  background-color: #ff8400;
+  height: 20%;
+  width: 100%;
+}
+
+input[type=text], select {
+  width: 100%;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  background-color: #ed7c03;
+}
+
+.row {
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.emeil-text {
+  display: flex;
+}
+
+.text-1 {
+  background-color: #ff8400;
+  width: 100%;
+  height: 150px;
+}
+.text-1 h1 {
+  margin-left: 30px;
+  padding-top: 30px;
+  color: #f1efef;
+  font-size: 29px;
+}
+.text-1 h6 {
+  padding-left: 30px;
+  color: #f1efef;
+  font-size: 15px;
+}
+
+.text-2 {
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+}
+
+.text-box {
+  margin: 30px;
+  display: flex;
+}
+
+.a-text {
+  border-radius: 2px;
+  background-color: floralwhite;
+  text-decoration: none;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+  margin-top: 9px;
+  color: #ff8801;
+  width: 300px;
+  font-size: 16px;
+  height: 46px;
+}
+
+.futer {
+  height: 100%;
+  width: 100%;
+  background-color: #343434;
+}
+
+.box {
+  background-color: #343434;
+  height: 100%;
+  width: 100%;
+}
+.box .tex-box {
+  margin: 5% 10%;
+  height: 100%;
+  height: 100%;
+  text-align: justify;
+}
+.box .tex-box h1 {
+  font-size: 29px;
+  color: #fff;
+}
+.box .tex-box p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.box-2 {
+  background-color: #343434;
+  height: 100%;
+  width: 100%;
+}
+.box-2 .tex-box-2 {
+  margin: 5% 10%;
+  width: 300px;
+  height: 100%;
+}
+.box-2 .tex-box-2 h1 {
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  font-size: 29px;
+  color: #fff;
+}
+.box-2 .tex-box-2 h2 {
+  font-size: 13px;
+  color: #fff;
+}
+.box-2 .tex-box-2 h3 {
+  font-size: 13px;
+  color: #fff;
+}
+.box-2 .tex-box-2 h4 {
+  font-size: 13px;
+  color: #fff;
+}
+.box-2 .tex-box-2 h5 {
+  font-size: 13px;
+  color: #fff;
+}
+.box-2 .tex-box-2 p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.box-3 {
+  background-color: #343434;
+  height: 100%;
+  width: 100%;
+}
+.box-3 .tex-box-3 {
+  margin: 5% 10%;
+  height: 100%;
+  height: 100%;
+}
+.box-3 .tex-box-3 h1 {
+  font-size: 29px;
+  color: #fff;
+}
+.box-3 .tex-box-3 p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: "text2";
+  src: url("/fonts/text2.ttf");
+}
+@font-face {
+  font-family: "pico";
+  src: url("/fonts/piza.ttf");
+}
+@font-face {
+  font-family: "h6";
+  src: url("/fonts/h6.ttf");
+}
+@font-face {
+  font-family: "robo";
+  src: url("/fonts/robo.ttf");
+}
+@font-face {
+  font-family: "DRINK";
+  src: url("/fonts/DRINK.ttf");
+}/*# sourceMappingURL=global.css.map */

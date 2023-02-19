@@ -1,0 +1,125 @@
+@media screen and (max-width:767px)
+  {
+    /* up-futer */
+    h6{
+      color: #f1f1ef;
+      font-size: 15px;
+      margin: 16px 0px 0px 0px;
+    }
+    h1{
+      margin: 0px 0px 0px 0px;
+    }
+    /*  */
+    .piza-back>.menu-piza{
+      display: none;
+    }
+    
+     /* შეთავაზებეi */
+    .menu-img-2,.menu-img-3,.menu-img{
+      height: 211px;
+    }
+    .menu-futer,.menu-futer-2,.menu-futer-3{
+      background: none;
+      text-align: center;
+      bottom: 30px;
+      
+      
+     }
+  }
+  @media screen and (max-width:563px)
+{
+  /* თავი */
+  .heder-nav>.logo{
+    text-align: center;
+    text-decoration: none;
+    padding: 65px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 100%;
+    font-family: "h6";
+  }
+  
+  
+ 
+}
+@media screen and (max-width:820px)
+{
+  /* up-futer*/
+  .text-1>h1{
+    padding-top: 30px;
+    color: #f1efef;
+    font-size: 27px;}
+    .text-1>h6{
+      color: #f1efef;
+      font-size: 15px;}
+}
+  /* futer  */
+@media screen and (max-width:445px)
+{
+    .in-1{
+    border: solid 2px red;
+    margin: 60px 0px 0px 0px;
+    color: #f1efef;
+    background-color: #ed7c03;
+    width: 100%;
+    height:  54px;
+  }
+  .futer-buton{
+    margin: 0px 0px 0px 0px;
+    font-weight: 700;
+    background-color: #fff;
+    font-size: 20px;
+    color: #ed7c03;
+    width: 100%;
+     height:  54px;
+  }
+
+  .text-1>h5{
+    justify-content: start;
+    color: #f8f8fa;
+    padding: 0px 0px  0px 0px;
+    font-size: 15px;
+  }
+  .text-1>h1{
+    padding: 0px 0px 0px 0px;
+  }
+  /* up-futer */
+  
+
+ 
+}
+@media screen and (max-width:628px)
+{/* tavi */
+
+  .menu-navigation{
+    display: NONE;
+  }
+
+  .text-1>h1{
+    margin-left: 30px;
+  }
+  .text-1>h6{
+    padding:0px 0px 0px 30px;
+  }
+
+
+  /*  */
+  .heder-nav>span{
+    margin: 35px 0px 0px 0px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;}
+
+    .heder-nav>.logo{
+      justify-content: center;
+      display: flex;
+      text-decoration: none;
+      padding: 45px 0px 0px 0px;
+      color: #fff;
+      font-size: 22px;
+      width: 100%;
+      font-family: "h6";
+    }
+
+}
